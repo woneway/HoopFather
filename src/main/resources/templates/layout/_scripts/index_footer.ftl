@@ -1,6 +1,6 @@
-<script src="http://localhost:8080/js/classie.js"></script>
+<script src="/js/classie.js"></script>
 
-<script src="http://localhost:8080/js/boxesfx.js"></script>
+<script src="/js/boxesfx.js"></script>
 
 <script>
 

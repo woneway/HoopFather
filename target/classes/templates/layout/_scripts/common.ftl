@@ -1,8 +1,8 @@
 <title>HoopFather</title>
-<link rel="stylesheet" type="text/css" href="http://localhost:8080/bootstrap/css/bootstrap.min.css">
-<script src="http://localhost:8080/jquery/jquery-3.3.1.min.js"></script>
-<script src="http://localhost:8080/bootstrap/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="http://localhost:8080/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+<script src="/jquery/jquery-3.3.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/custom.css">
 <script>
 $(document).ready(function(){
 $("#logout").click(function(){
