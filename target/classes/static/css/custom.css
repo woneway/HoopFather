@@ -1,0 +1,60 @@
+body {
+	padding-top: 70px; 
+	padding-bottom: 70px;
+	background:#3c3c3c;
+	color: #c6c6c6;
+}
+.container .news{
+	padding:0 25%;
+}
+.container .news .newsTitle{
+	font-size:18px;
+}
+.container .new .newsContent{
+	font-size:15px;
+	color:#ffffff;
+}
+
+.container .news .newsContentShort{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.container .news .newsMore{
+	margin:10px auto;
+}
+
+.container .news .newsPhoto{
+	margin:20px auto;
+}
+
+.container .news .newsInfo{
+	margin-top:20px;
+	text-align:left;
+}
+
+.container .skill{
+	padding:0 25%;
+}
+.container .skill .skillTitle{
+	font-size:18px;
+}
+.container .skill .skillContent{
+	font-size:15px;
+	color:#ffffff;
+	margin:10px auto;
+}
+
+.container .skill .skillDesc{
+	font-size:15px;
+	color:#ffffff;
+}
+.container .skill .skillMore{
+	margin:10px auto;
+}
+
+.container .skill .skillInfo{
+	margin:10px auto;
+}
+
