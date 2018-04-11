@@ -12,6 +12,6 @@
     
     <#include "_custom/footer.ftl">
 </body>
-
+<#include "_scripts/skill.ftl">
 </html>
 </#macro>

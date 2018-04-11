@@ -6,8 +6,8 @@
 		</div>
 		<div>
 		<ul class="nav navbar-nav navbar-left">
-				<li><a href="http://localhost:8080/skill">肆虐球场小技巧</a></li>
-				<li><a href="http://localhost:8080/news">周边新闻</a></li>
+				<li id="header_skill"><a href="http://localhost:8080/skill">肆虐球场小技巧</a></li>
+				<li id="header_news"><a href="http://localhost:8080/news">周边新闻</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<#if user?exists>

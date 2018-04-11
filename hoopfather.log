@@ -13786,3 +13786,575 @@ FTL stack trace ("~" means nesting-related):
 2018-04-11 13:48:55.608  INFO 8720 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2018-04-11 13:48:55.608  INFO 8720 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
 2018-04-11 13:48:55.611  INFO 8720 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-04-11 15:59:24.985  INFO 5288 --- [main] com.woneway.Springproject1Application    : Starting Springproject1Application on KIDS-1709221446 with PID 5288 (D:\Work\eclipse-ws\springproject1\target\classes started by Administrator in D:\Work\eclipse-ws\springproject1)
+2018-04-11 15:59:24.987  INFO 5288 --- [main] com.woneway.Springproject1Application    : No active profile set, falling back to default profiles: default
+2018-04-11 15:59:25.013  INFO 5288 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb738bb: startup date [Wed Apr 11 15:59:25 CST 2018]; root of context hierarchy
+2018-04-11 15:59:25.808  INFO 5288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-11 15:59:25.830  INFO 5288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-11 15:59:25.830  INFO 5288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-11 15:59:25.854  INFO 5288 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\jdk1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/jre1.8.0_91/bin/server;C:/jre1.8.0_91/bin;C:/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\jdk1.8.0_91\bin;C:\jdk1.8.0_91\jre\bin;D:\Work\rt\mytomcat\lib;D:\Work\rt\mytomcat\bin;D:\Work\maven\bin;E:\apache-ant-1.10.2\bin;E:\nodejs\;E:\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Roaming\npm;D:\Work\eclipse;;.]
+2018-04-11 15:59:25.931  INFO 5288 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-11 15:59:25.931  INFO 5288 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 918 ms
+2018-04-11 15:59:26.031  INFO 5288 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-11 15:59:26.034  INFO 5288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-11 15:59:26.035  INFO 5288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-11 15:59:26.035  INFO 5288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-11 15:59:26.035  INFO 5288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-11 15:59:26.478  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb738bb: startup date [Wed Apr 11 15:59:25 CST 2018]; root of context hierarchy
+2018-04-11 15:59:26.528  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/news]}" onto public java.lang.String com.woneway.controller.NewsController.newsList(org.springframework.ui.Model)
+2018-04-11 15:59:26.529  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/news/{newsId}]}" onto public java.lang.String com.woneway.controller.NewsController.newsMore(java.lang.String,org.springframework.ui.Model)
+2018-04-11 15:59:26.530  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/skill/{skillId}]}" onto public java.lang.String com.woneway.controller.SkillController.skillMore(java.lang.String,org.springframework.ui.Model)
+2018-04-11 15:59:26.530  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/skill]}" onto public java.lang.String com.woneway.controller.SkillController.skillList(org.springframework.ui.Model)
+2018-04-11 15:59:26.531  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/doRegister]}" onto public com.woneway.result.ResultBody com.woneway.controller.UserController.register(com.woneway.domain.User,java.lang.String) throws javax.mail.MessagingException,com.woneway.exception.GlobalErrorInfoException
+2018-04-11 15:59:26.531  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/login]}" onto public java.lang.String com.woneway.controller.UserController.loginPage()
+2018-04-11 15:59:26.532  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/register]}" onto public java.lang.String com.woneway.controller.UserController.registerPage()
+2018-04-11 15:59:26.532  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/doLogin]}" onto public com.woneway.result.ResultBody com.woneway.controller.UserController.login(com.woneway.domain.User,javax.servlet.http.HttpSession) throws com.woneway.exception.GlobalErrorInfoException
+2018-04-11 15:59:26.532  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/logout]}" onto public java.lang.String com.woneway.controller.UserController.logout(javax.servlet.http.HttpSession)
+2018-04-11 15:59:26.532  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/doAcitveUser]}" onto public java.lang.String com.woneway.controller.UserController.acitveUser(java.lang.String)
+2018-04-11 15:59:26.532  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/userInfo]}" onto public java.lang.String com.woneway.controller.UserController.userInfoPage()
+2018-04-11 15:59:26.534  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-11 15:59:26.535  INFO 5288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-11 15:59:26.566  INFO 5288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-11 15:59:26.566  INFO 5288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-11 15:59:26.576  INFO 5288 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalErrorInfoHandler
+2018-04-11 15:59:26.591  INFO 5288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-11 15:59:26.616  INFO 5288 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-04-11 15:59:26.710  INFO 5288 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-11 15:59:26.798  INFO 5288 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-11 15:59:26.799  INFO 5288 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-11 15:59:26.802  INFO 5288 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-11 15:59:26.829  INFO 5288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-11 15:59:26.831  INFO 5288 --- [main] com.woneway.Springproject1Application    : Started Springproject1Application in 2.079 seconds (JVM running for 2.433)
+2018-04-11 15:59:31.687  INFO 5288 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1522027953,1522050469,1522059537; JSESSIONID=57BE63837F1FD2059F5EDF00F1C67425] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-04-11 15:59:31.692  INFO 5288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-11 15:59:31.692  INFO 5288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-11 15:59:31.704  INFO 5288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-04-11 15:59:36.780  INFO 5288 --- [http-nio-8080-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-11 16:15:54.537 ERROR 5288 --- [http-nio-8080-exec-3] freemarker.runtime                       : Error executing FreeMarker template
+
+freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----
+	at freemarker.core.Include.accept(Include.java:164) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:361) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.invoke(Environment.java:754) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:325) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:331) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.process(Environment.java:304) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.template.Template.process(Template.java:382) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:396) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:309) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:257) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:165) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: freemarker.template.TemplateNotFoundException: Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2701) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2517) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Include.accept(Include.java:162) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	... 58 common frames omitted
+
+2018-04-11 16:15:54.540 ERROR 5288 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----] with root cause
+
+freemarker.template.TemplateNotFoundException: Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2701) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2517) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Include.accept(Include.java:162) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:361) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.invoke(Environment.java:754) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:325) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:331) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.process(Environment.java:304) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.template.Template.process(Template.java:382) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:396) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:309) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:257) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:165) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2018-04-11 16:15:54.548 ERROR 5288 --- [http-nio-8080-exec-3] w.s.e.ErrorMvcAutoConfiguration$SpelView : Cannot render error page for request [/news] and exception [Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----] as the response has already been committed. As a result, the response may have the wrong status code.
+2018-04-11 16:15:55.426 ERROR 5288 --- [http-nio-8080-exec-4] freemarker.runtime                       : Error executing FreeMarker template
+
+freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----
+	at freemarker.core.Include.accept(Include.java:164) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:361) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.invoke(Environment.java:754) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:325) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:331) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.process(Environment.java:304) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.template.Template.process(Template.java:382) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:396) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:309) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:257) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:165) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: freemarker.template.TemplateNotFoundException: Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2701) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2517) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Include.accept(Include.java:162) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	... 58 common frames omitted
+
+2018-04-11 16:15:55.429 ERROR 5288 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----] with root cause
+
+freemarker.template.TemplateNotFoundException: Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2701) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2517) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Include.accept(Include.java:162) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:361) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.invoke(Environment.java:754) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:325) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:331) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.process(Environment.java:304) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.template.Template.process(Template.java:382) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:396) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:309) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:257) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:165) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2018-04-11 16:15:55.431 ERROR 5288 --- [http-nio-8080-exec-4] w.s.e.ErrorMvcAutoConfiguration$SpelView : Cannot render error page for request [/news] and exception [Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----] as the response has already been committed. As a result, the response may have the wrong status code.
+2018-04-11 16:15:55.861 ERROR 5288 --- [http-nio-8080-exec-6] freemarker.runtime                       : Error executing FreeMarker template
+
+freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----
+	at freemarker.core.Include.accept(Include.java:164) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:361) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.invoke(Environment.java:754) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:325) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:331) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.process(Environment.java:304) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.template.Template.process(Template.java:382) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:396) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:309) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:257) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:165) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: freemarker.template.TemplateNotFoundException: Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2701) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2517) [freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Include.accept(Include.java:162) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	... 58 common frames omitted
+
+2018-04-11 16:15:55.862 ERROR 5288 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----] with root cause
+
+freemarker.template.TemplateNotFoundException: Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2701) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2517) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Include.accept(Include.java:162) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:361) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.invoke(Environment.java:754) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:325) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.visit(Environment.java:331) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.core.Environment.process(Environment.java:304) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at freemarker.template.Template.process(Template.java:382) ~[freemarker-2.3.27-incubating.jar:2.3.27]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:396) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:309) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:257) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:165) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2018-04-11 16:15:55.864 ERROR 5288 --- [http-nio-8080-exec-6] w.s.e.ErrorMvcAutoConfiguration$SpelView : Cannot render error page for request [/news] and exception [Template inclusion failed (for parameter value "_scripts/new.ftl"):
+Template not found for name "layout/_scripts/new.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="D:\Work\eclipse-ws\springproject1\target\classes\templates", canonicalBasePath="D:\Work\eclipse-ws\springproject1\target\classes\templates\"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "_scripts/new.ftl"  [in template "layout/news.ftl" in macro "layout" at line 14, column 9]
+	- Reached through: @defaultLayout.layout  [in template "news.ftl" at line 5, column 1]
+----] as the response has already been committed. As a result, the response may have the wrong status code.
+2018-04-11 16:16:09.634  INFO 5288 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-04-11 16:16:09.634  INFO 5288 --- [RMI TCP Connection(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb738bb: startup date [Wed Apr 11 15:59:25 CST 2018]; root of context hierarchy
+2018-04-11 16:16:09.635  INFO 5288 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-11 16:16:09.636  INFO 5288 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-04-11 16:16:09.638  INFO 5288 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-04-11 16:16:19.111  INFO 7912 --- [main] com.woneway.Springproject1Application    : Starting Springproject1Application on KIDS-1709221446 with PID 7912 (D:\Work\eclipse-ws\springproject1\target\classes started by Administrator in D:\Work\eclipse-ws\springproject1)
+2018-04-11 16:16:19.113  INFO 7912 --- [main] com.woneway.Springproject1Application    : No active profile set, falling back to default profiles: default
+2018-04-11 16:16:19.138  INFO 7912 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb738bb: startup date [Wed Apr 11 16:16:19 CST 2018]; root of context hierarchy
+2018-04-11 16:16:19.928  INFO 7912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-04-11 16:16:19.946  INFO 7912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-11 16:16:19.946  INFO 7912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-11 16:16:19.964  INFO 7912 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\jdk1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/jre1.8.0_91/bin/server;C:/jre1.8.0_91/bin;C:/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\jdk1.8.0_91\bin;C:\jdk1.8.0_91\jre\bin;D:\Work\rt\mytomcat\lib;D:\Work\rt\mytomcat\bin;D:\Work\maven\bin;E:\apache-ant-1.10.2\bin;E:\nodejs\;E:\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Roaming\npm;D:\Work\eclipse;;.]
+2018-04-11 16:16:20.033  INFO 7912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-11 16:16:20.033  INFO 7912 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 895 ms
+2018-04-11 16:16:20.126  INFO 7912 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-11 16:16:20.130  INFO 7912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-11 16:16:20.130  INFO 7912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-11 16:16:20.131  INFO 7912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-11 16:16:20.131  INFO 7912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-11 16:16:20.597  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb738bb: startup date [Wed Apr 11 16:16:19 CST 2018]; root of context hierarchy
+2018-04-11 16:16:20.657  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/news/{newsId}]}" onto public java.lang.String com.woneway.controller.NewsController.newsMore(java.lang.String,org.springframework.ui.Model)
+2018-04-11 16:16:20.658  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/news]}" onto public java.lang.String com.woneway.controller.NewsController.newsList(org.springframework.ui.Model)
+2018-04-11 16:16:20.658  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/skill/{skillId}]}" onto public java.lang.String com.woneway.controller.SkillController.skillMore(java.lang.String,org.springframework.ui.Model)
+2018-04-11 16:16:20.659  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/skill]}" onto public java.lang.String com.woneway.controller.SkillController.skillList(org.springframework.ui.Model)
+2018-04-11 16:16:20.661  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/doRegister]}" onto public com.woneway.result.ResultBody com.woneway.controller.UserController.register(com.woneway.domain.User,java.lang.String) throws javax.mail.MessagingException,com.woneway.exception.GlobalErrorInfoException
+2018-04-11 16:16:20.661  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/login]}" onto public java.lang.String com.woneway.controller.UserController.loginPage()
+2018-04-11 16:16:20.661  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/register]}" onto public java.lang.String com.woneway.controller.UserController.registerPage()
+2018-04-11 16:16:20.661  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/doLogin]}" onto public com.woneway.result.ResultBody com.woneway.controller.UserController.login(com.woneway.domain.User,javax.servlet.http.HttpSession) throws com.woneway.exception.GlobalErrorInfoException
+2018-04-11 16:16:20.661  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/logout]}" onto public java.lang.String com.woneway.controller.UserController.logout(javax.servlet.http.HttpSession)
+2018-04-11 16:16:20.662  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/doAcitveUser]}" onto public java.lang.String com.woneway.controller.UserController.acitveUser(java.lang.String)
+2018-04-11 16:16:20.662  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usr/userInfo]}" onto public java.lang.String com.woneway.controller.UserController.userInfoPage()
+2018-04-11 16:16:20.665  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-11 16:16:20.665  INFO 7912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-11 16:16:20.688  INFO 7912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-11 16:16:20.688  INFO 7912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-11 16:16:20.698  INFO 7912 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalErrorInfoHandler
+2018-04-11 16:16:20.717  INFO 7912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-11 16:16:20.746  INFO 7912 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-04-11 16:16:20.828  INFO 7912 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-04-11 16:16:20.926  INFO 7912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-11 16:16:20.927  INFO 7912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-11 16:16:20.930  INFO 7912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-11 16:16:20.957  INFO 7912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-04-11 16:16:20.960  INFO 7912 --- [main] com.woneway.Springproject1Application    : Started Springproject1Application in 2.097 seconds (JVM running for 2.463)
+2018-04-11 16:16:25.000  INFO 7912 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1522027953,1522050469,1522059537; JSESSIONID=9D4219BF194AFB8257FE0CC5F9496B4B] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-04-11 16:16:25.005  INFO 7912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-11 16:16:25.005  INFO 7912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-11 16:16:25.016  INFO 7912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms

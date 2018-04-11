@@ -16,10 +16,8 @@ body {
 }
 
 .container .news .newsContentShort{
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
 	overflow: hidden;
+	height:20px;
 }
 .container .news .newsMore{
 	margin:10px auto;
@@ -31,7 +29,7 @@ body {
 
 .container .news .newsInfo{
 	margin-top:20px;
-	text-align:left;
+	text-align:center;
 }
 
 .container .skill{

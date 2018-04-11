@@ -11,6 +11,6 @@
     
     <#include "_custom/footer.ftl">
 </body>
-
+	<#include "_scripts/news.ftl">
 </html>
 </#macro>

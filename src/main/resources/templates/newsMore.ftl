@@ -8,17 +8,17 @@
 		<div class="col-md-6 column">
 				<div class="container news">
 					<div class="newsTitle text-center article-title">${news.newsTitle}</div>
-					
+					<div class="newsInfo">
+						<span>作者：${news.newsAuthor}</span>
+						<span>日期：${news.newsDate}</span>
+					</div>
 					<div class="newsPhoto"><img class="img-responsive center-block" src="${news.newsPhoto}"/></div>
 					
 					<div class="newsContent">
 						${news.newsContent}	
 					</div>
 					
-					<div class="newsInfo pull-right">
-						<span>作者：${news.newsAuthor}</span><br>
-						<span>日期：${news.newsDate}</span>
-					</div>
+					
 					
 				</div>
 		</div>

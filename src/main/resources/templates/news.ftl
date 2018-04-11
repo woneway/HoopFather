@@ -11,7 +11,7 @@
 					<div class="newsTitle text-center article-title">${news.newsTitle}</div>
 					
 					<div class="newsContent newsContentShort">
-										&nbsp;&nbsp; ${news.newsContent}	
+						 ${news.newsContent}	
 					</div>
 					<div class="newsMore text-center">
 						<a href="/news/${news.newsId}">查看更多</a>
